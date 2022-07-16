@@ -25,19 +25,19 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item ">
-                    <a class="nav-link mt-4" href="#ac_alquilar">Autocaravanas</a>
+                    <a class="nav-link mt-4" href="#ac_alquilar" id="auto">Autocaravanas</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link mt-4" href="nosotros.html">Nosotros</a>
+                    <a class="nav-link mt-4" href="nosotros.html" id="nos">Nosotros</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link mt-4" href="condiciones.html">Condiciones</a>
+                    <a class="nav-link mt-4" href="condiciones.html" id="con">Condiciones</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link mt-4" href="tarifas.html">Tarifas</a>
+                    <a class="nav-link mt-4" href="tarifas.html" id="tar">Tarifas</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link mt-4" href="contacto.html">Contacto</a>
+                    <a class="nav-link mt-4" href="contacto.html" id="cont">Contacto</a>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link mt-4">
@@ -51,21 +51,10 @@
         </div>
     </nav>
 
-
-
-
-    <!-- Imagen principal
-    <div class="hero-image">
-        <div class="hero-text">
-            <h1 style="font-size:50px">Alquiler de Autocaravanas en Benalmadena</h1>
-        </div>
-    </div>
-    -->
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="./Images_logo/benalmadena.webp" alt="First slide"
-                    href="">
+                <img class="d-block w-100" src="./Images_logo/benalmadena.webp" alt="First slide" href="">
             </div>
         </div>
     </div>
@@ -99,12 +88,54 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <img class="d-block w-100" src="/Images_logo/benalmadena.webp" alt="First slide">
-        <h1 class="display-4">Fluid jumbotron</h1>
-        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.
-        </p>
+
+    <div class="p-4">
+        <div class="title">
+            <h1>
+                <center id="elegirnos">¿Por qué elegirnos?</center>
+            </h1>
+        </div>
+
+        <div class="row mb-3 p-3">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" id="t1">Trato cercano.</h5>
+                        <p class="card-text" id="s1">Saluda a unas vacaciones que nunca olvidarás.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" id="t2">Empieza tus vacaciones desde Benalmádena.</h5>
+                        <p class="card-text" id="s2">Nuestras autocaravanas son perfectas para aquellos que quieren viajar por
+                            España.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-3 p-3">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" id="t3">Totalmente equipadas.</h5>
+                        <p class="card-text" id="s3">Salga a la carretera con una de nuestras Autocaravanas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" id="t4">Vehículos con menos de 1 año</h5>
+                        <p class="card-text" id="s4">Nuestras Autocaravanas tienen menos de 1 año por lo cual aseguran pocos kiómetros y un desgaste reducido.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+   
     <!--Precios-->
     <div>
         <div id="ac_alquilar" class="title">
@@ -121,27 +152,27 @@
 
                     <table>
                         <tr>
-                            <th>Temporada</th>
-                            <th>Periodo</th>
+                            <th id="tem1">Temporada</th>
+                            <th id="per">Periodo</th>
                         </tr>
                         <tr>
-                            <td class="color color1">Reducida</td>
-                            <td>1 ENERO – 28 FEBRERO</td>
+                            <td class="color color1" id="red1">Reducida</td>
+                            <td id="redper"> 1 ENERO – 28 FEBRERO</td>
                         </tr>
                         <tr>
-                            <td class="color color2">Baja</td>
-                            <td>1 MARZO – 30 ABRIL <br>
+                            <td class="color color2" id="baj1">Baja</td>
+                            <td id="bajper"> 1 MARZO – 30 ABRIL <br>
                                 1 NOVIEMBRE – 31 DICIEMBRE</td>
                         </tr>
                         <tr>
-                            <td class=" color color3">Media</td>
-                            <td>1 MAYO – 30 JUNIO <br>
+                            <td class=" color color3" id="med1">Media</td>
+                            <td id="medper">1 MAYO – 30 JUNIO <br>
                                 1 SEPTIEMBRE – 31 OCTUBRE <br>
                                 * Puentes y Festivos Nacionales</td>
                         </tr>
                         <tr>
-                            <td class=" color color4">Alta</td>
-                            <td>1 JULIO – 31 AGOSTO <br>
+                            <td class=" color color4" id="alt1">Alta</td>
+                            <td id="altper">1 JULIO – 31 AGOSTO <br>
                                 * Semana Santa</td>
                         </tr>
 
@@ -159,27 +190,27 @@
 
                 <table>
                     <tr>
-                        <th>Temporada</th>
-                        <th>Minimo</th>
-                        <th>Precio</th>
+                        <th id="tem">Temporada</th>
+                        <th id="min"> Minimo</th>
+                        <th id="pre">Precio</th>
                     </tr>
                     <tr>
-                        <td class="color color1">Reducida</td>
+                        <td class="color color1" id="red">Reducida</td>
                         <td>3</td>
                         <td>120€</td>
                     </tr>
                     <tr>
-                        <td class="color color2">Baja</td>
+                        <td class="color color2" id="baj">Baja</td>
                         <td>3</td>
                         <td>120€</td>
                     </tr>
                     <tr>
-                        <td class="color color3">Media</td>
+                        <td class="color color3" id="med">Media</td>
                         <td>3</td>
                         <td>120€</td>
                     </tr>
                     <tr>
-                        <td class="color color4">Alta</td>
+                        <td class="color color4" id="alt">Alta</td>
                         <td>7</td>
                         <td>120€</td>
                     </tr>
@@ -190,7 +221,7 @@
     </div>
 
 
-    
+
 
     <footer>
         <div class="card-footer border-success">Footer</div>
@@ -205,7 +236,7 @@
 
 
     <script src="script.js" crossorigin="anonymous">
-        
+
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
