@@ -91,3 +91,41 @@ color: #fff;
   margin: 15px;
   
 }
+
+.back {
+  background-image: url("./Images_logo/benalmadena.webp");  
+}
+.back2{
+  background-image: url("./image/motorhome.jpeg");
+  background-size: cover;
+}
+.quiensomos{
+  height: 350px;
+  width: 100%;
+  position: relative;
+
+  background-color: #ffffff;
+
+  opacity: 0.6;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+    
+}
+.subcentered {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+    font-size: medium;
+}
