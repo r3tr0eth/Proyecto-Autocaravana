@@ -93,7 +93,9 @@ color: #fff;
 }
 
 .back {
-  background-image: url("./Images_logo/benalmadena.webp");  
+  background-image: url("./Images_logo/benal.jpeg");
+  background-size: cover;
+
 }
 .back2{
   background-image: url("./image/motorhome.jpeg");
