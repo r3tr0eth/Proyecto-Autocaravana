@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Autocaravas</title>
-    <link rel="icon" type="image/png" href="/Images_logo/favicon.png" />
+    <title id="title">Autocaravas</title>
+    <link rel="icon" type="image/png" href="./Images_logo/favicon.png" />
 
 </head>
 
@@ -25,7 +25,7 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item ">
-                    <a class="nav-link mt-4" href="#ac_alquilar" id="auto">Autocaravanas</a>
+                    <a class="nav-link mt-4" href="index.html#ac_alquilar" id="auto">Autocaravanas</a>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link mt-4" href="nosotros.html" id="nos">Nosotros</a>
@@ -61,12 +61,12 @@
                 </center>
             </h2>
         </div>
-      </div>
-      
+    </div>
+
     <!-- Modelo-->
     <div class="title">
         <h1>
-            <center>Modelo : ELNAGH BARON 560</center>
+            <center id="model">Modelo : ELNAGH BARON 560</center>
         </h1>
     </div>
 
@@ -75,12 +75,62 @@
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100 h-50" src="image/Front_izq.jpg" alt="First slide">
+                        <img class="d-block w-100 h-50" src="image/elnagh/coc.jpg">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="image/Front_der.jpg" alt="Second slide">
+                        <img class="d-block w-100" src="image/elnagh/Front_der.jpg">
                     </div>
-
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="image/elnagh/Front_izq.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="image/elnagh/ext.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="image/elnagh/ext_back.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="image/elnagh/ext_back2.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="image/elnagh/frente_1.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="image/elnagh/int.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="image/elnagh/pass.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="image/elnagh/PHOTO-2022-07-12-18-38-03 2.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="image/elnagh/PHOTO-2022-07-12-18-38-04 2.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="image/elnagh/PHOTO-2022-07-12-18-38-04.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="image/elnagh/PHOTO-2022-07-12-18-38-05 2.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="image/elnagh/PHOTO-2022-07-12-18-38-05.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="image/elnagh/PHOTO-2022-07-12-18-38-06 2.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="image/elnagh/PHOTO-2022-07-12-18-38-06.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="image/elnagh/PHOTO-2022-07-12-18-38-06.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="image/elnagh/PHOTO-2022-07-12-18-38-07 2.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="image/elnagh/PHOTO-2022-07-12-18-38-07.jpg">
+                    </div>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -92,6 +142,7 @@
 
             </a>
         </div>
+    
         <div class="col-sm-6">
             <div class="card-header" id="cara">
                 Caracteristicas
@@ -117,11 +168,12 @@
 
         </div>
 
-        <a href="reservas.html" class="btn btn-primary">Reservar</a>
 
     </div>
     <div class="tar">
-        <a href="tarifas.html" class="btn btn-primary">Tarifas</a>
+        <a href="reservas.html" class="btn btn-primary" id="reserve">Reservar</a>
+
+        <a href="tarifas.html" class="btn btn-primary" id="rates">Tarifas</a>
     </div>
 
     <div class="p-4">
@@ -144,7 +196,8 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title" id="t2">Empieza tus vacaciones desde Benalmádena.</h5>
-                        <p class="card-text" id="s2">Nuestras autocaravanas son perfectas para aquellos que quieren
+                        <p class="card-text" id="s2">Nuestras autocaravanas son perfectas para aquellos que
+                            quieren
                             viajar por
                             España.</p>
                     </div>
@@ -165,7 +218,8 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title" id="t4">Vehículos con menos de 1 año</h5>
-                        <p class="card-text" id="s4">Nuestras Autocaravanas tienen menos de 1 año por lo cual aseguran
+                        <p class="card-text" id="s4">Nuestras Autocaravanas tienen menos de 1 año por lo cual
+                            aseguran
                             pocos kiómetros y un desgaste reducido.</p>
                     </div>
                 </div>
@@ -180,7 +234,7 @@
 
     </footer>
 
-    <script src="autocv.js" crossorigin="anonymous">
+    <script src="./js/autocv.js" crossorigin="anonymous">
 
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

@@ -7,6 +7,8 @@ function changeLanguage(lang) {
 // Define the language reload anchors
 var language = {
     es: {
+        title:
+        "Autocaravana",
         //Menu
         auto:
             "Autocaravanas",
@@ -78,6 +80,8 @@ var language = {
             "Multimedia Pioneer Carplay",
     },
     eng: {
+        title:
+        "Motorhome",
         //Menu
         auto:
             "Motorhomes",
@@ -155,6 +159,7 @@ if (window.location.hash) {
     // depending on the hash value
     if (window.location.hash == "#es") {
         //Menu
+        title.textContent = language.es.title;
         auto.textContent = language.es.auto;
         nos.textContent = language.es.nos;
         con.textContent = language.es.con;
@@ -195,6 +200,7 @@ if (window.location.hash) {
 
     } else if (window.location.hash == "#eng") {
         //Menu
+        title.textContent = language.eng.title;
         auto.textContent = language.eng.auto;
         nos.textContent = language.eng.nos;
         con.textContent = language.eng.con;
@@ -205,8 +211,16 @@ if (window.location.hash) {
         text.textContent = language.eng.text;
         text2.textContent = language.eng.text2;
 
-        //Por que elegirnos
-        elegirnos.textContent = language.es.elegirnos;
+       //Por que elegirnos
+       elegirnos.textContent = language.eng.elegirnos;
+       t1.textContent = language.eng.t1;
+       s1.textContent = language.eng.s1;
+       t2.textContent = language.eng.t2;
+       s2.textContent = language.eng.s2;
+       t3.textContent = language.eng.t3;
+       s3.textContent = language.eng.s3;
+       t4.textContent = language.eng.t4;
+       s4.textContent = language.eng.s4;
        
         //Caracteristicas
         cara.textContent = language.eng.cara;
@@ -215,7 +229,7 @@ if (window.location.hash) {
         cara3.textContent = language.eng.cara3;
         cara4.textContent = language.eng.cara4;
         cara5.textContent = language.eng.cara5;
-        cara6.textContent = language.es.cara6;
+        cara6.textContent = language.eng.cara6;
         cara7.textContent = language.eng.cara7;
         cara8.textContent = language.eng.cara8;
         cara9.textContent = language.eng.cara9;

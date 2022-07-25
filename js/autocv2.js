@@ -7,7 +7,8 @@ function changeLanguage(lang) {
 // Define the language reload anchors
 var language = {
     es: {
-
+        title:
+        "Autocaravana",
         //Menu
         auto:
             "Autocaravanas",
@@ -80,6 +81,8 @@ var language = {
 
     },
     eng: {
+        title:
+        "Motorhome",
         //Menu
         auto:
             "Motorhomes",
@@ -158,6 +161,8 @@ if (window.location.hash) {
     // Set the content of the webpage
     // depending on the hash value
     if (window.location.hash == "#es") {
+        title.textContent = language.es.title;
+
         //Menu
         auto.textContent = language.es.auto;
         nos.textContent = language.es.nos;
@@ -198,7 +203,9 @@ if (window.location.hash) {
        cara14.textContent = language.es.cara14;
 
     } else if (window.location.hash == "#eng") {
-        //Menu
+        
+        title.textContent = language.eng.title;
+        //Menu: 
         auto.textContent = language.eng.auto;
         nos.textContent = language.eng.nos;
         con.textContent = language.eng.con;
@@ -227,7 +234,7 @@ if (window.location.hash) {
          cara3.textContent = language.eng.cara3;
          cara4.textContent = language.eng.cara4;
          cara5.textContent = language.eng.cara5;
-         cara6.textContent = language.es.cara6;
+         cara6.textContent = language.eng.cara6;
          cara7.textContent = language.eng.cara7;
          cara8.textContent = language.eng.cara8;
          cara9.textContent = language.eng.cara9;
