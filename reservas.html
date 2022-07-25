@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,19 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reservas.css">
+    <link rel="icon" type="image/png" href="./Images_logo/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,900" rel="stylesheet">
     <title>Reservas</title>
     <link rel="icon" type="image/png" href="/Images_logo/favicon.png" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">
-            <img src="./Images_logo/logo_real.png" width="75" height="75" alt="">
+            <img src="Images_logo/logo_real.png" width="75" height="75" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,19 +29,19 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item ">
-                    <a class="nav-link mt-4" href="#ac_alquilar">Autocaravanas</a>
+                    <a class="nav-link mt-4" href="#ac_alquilar" id="auto">Autocaravanas</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link mt-4" href="nosotros.html">Nosotros</a>
+                    <a class="nav-link mt-4" href="nosotros.html" id="nos">Nosotros</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link mt-4" href="condiciones.html">Condiciones</a>
+                    <a class="nav-link mt-4" href="condiciones.html" id="con">Condiciones</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link mt-4" href="tarifas.html">Tarifas</a>
+                    <a class="nav-link mt-4" href="tarifas.html" id="tar">Tarifas</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link mt-4" href="contacto.html">Contacto</a>
+                    <a class="nav-link mt-4" href="contacto.html" id="cont">Contacto</a>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link mt-4">
@@ -49,10 +55,128 @@
         </div>
     </nav>
 
+    <div class="back">
+        <div id="ac_alquilar" class="quiensomos ">
+            <h1>
+                <center class="centered">Haz tu reserva ahora </center>
+            </h1>
+        </div>
+    </div>
+    <div class="container justify-content-center">
+        <form method="post" action="https://formspree.io/f/xrgjnjrw" onSubmit="return validateForm();">
+            <div style="max-width: 350px;">
+            </div>
+            <div style="padding-bottom: 18px;font-size : 24px;">Alquiler de Autocaravana</div>
+            <div style="display: flex; padding-bottom: 18px;max-width : 450px;">
+                <div style=" margin-left: 0; margin-right: 1%; width: 49%;">Nombre<span style="color: red;">
+                        *</span><br />
+                    <input type="text" id="data_2" name="data_2" style="max-width: 100%;" class="form-control"
+                        placeholder="Nombre" />
+                </div>
+                <div style=" margin-left: 1%; margin-right: 0; width: 49%;">Apellido<span style="color: red;">
+                        *</span><br />
+                    <input type="text" id="data_3" name="data_3" style="max-width: 100%;" class="form-control"
+                        placeholder="Apellido" />
+                </div>
+            </div>
+            <div style="padding-bottom: 18px;">Teléfono<span style="color: red;"> *</span><br />
+                <input type="text" id="data_4" name="data_4" style="max-width : 450px;" class="form-control"
+                    placeholder="Teléfono" />
+            </div>
+            <div style="padding-bottom: 18px;">Email<span style="color: red;"> *</span><br />
+                <input type="text" id="data_5" name="data_5" style="max-width : 450px;" class="form-control"
+                    placeholder="Email" />
+            </div>
+
+            <div style="padding-bottom: 18px;">Elige autocaravana<span style="color: red;"> *</span><br />
+                <select id="data_11" name="autocaravana" style="max-width : 450px;" class="form-control">
+                    <option>Elige autocaravana</option>
+                    <option>Fiat</option>
+                    <option>Elnagh</option>
+                </select>
+            </div>
+            <div style="padding-bottom: 18px;">Fecha de inicio<span style="color: red;"> *</span><br />
+                <input type="text" id="data_6" name="data_6" style="max-width : 250px;" class="form-control" />
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/pikaday.min.js"
+                type="text/javascript"></script>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/css/pikaday.min.css" rel="stylesheet"
+                type="text/css" />
+            <script type="text/javascript">new Pikaday({ field: document.getElementById('data_6') });</script>
+            <div style="padding-bottom: 18px;">Fecha de regreso<span style="color: red;"> *</span><br />
+                <input type="text" id="data_7" name="data_7" style="max-width : 250px;" class="form-control" />
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/pikaday.min.js"
+                type="text/javascript"></script>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/css/pikaday.min.css" rel="stylesheet"
+                type="text/css" />
+            <script type="text/javascript">new Pikaday({ field: document.getElementById('data_7') });</script>
+
+
+            <div style="padding-bottom: 18px;">Comentarios / Preguntas<br />
+                <textarea id="data_10" false name="data_10" style="max-width : 450px;" rows="6" class="form-control"
+                    placeholder="Comentarios"></textarea>
+            </div>
+            <div class="g-recaptcha" data-sitekey="6Lc3WB0hAAAAAKADeAr-dW2-rOtjkT4NnbVIUfod"></div>
+            <div style="padding-bottom: 18px;"><input value="Submit" type="submit" /></div>
+
+        </form>
+    </div>
+
 
 </body>
 
 <script src="./js/script.js" crossorigin="anonymous">
-        
+
 </script>
+<script type="text/javascript">
+    function validateForm() {
+        if (isEmpty(document.getElementById('data_2').value.trim())) {
+            alert('First name is required!');
+            return false;
+        }
+        if (isEmpty(document.getElementById('data_3').value.trim())) {
+            alert('Last name is required!');
+            return false;
+        }
+        if (isEmpty(document.getElementById('data_4').value.trim())) {
+            alert('Phone is required!');
+            return false;
+        }
+        if (isEmpty(document.getElementById('data_5').value.trim())) {
+            alert('Email is required!');
+            return false;
+        }
+        if (!validateEmail(document.getElementById('data_5').value.trim())) {
+            alert('Email must be a valid email address!');
+            return false;
+        }
+        if (isEmpty(document.getElementById('data_6').value.trim())) {
+            alert('Requerido el dia de llegada!');
+            return false;
+        }
+        if (isEmpty(document.getElementById('data_7').value.trim())) {
+            alert('Requerido el dia de salida!');
+            return false;
+        }
+
+        return true;
+    }
+    function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+    function validateEmail(email) {
+        var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+        return isEmpty(email) || re.test(email);
+    }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
 </html>
