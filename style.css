@@ -169,7 +169,12 @@ color: #fff;
   visibility: visible;
 }
 
-
+.button{
+  padding: 15px;
+  background-color: blue;
+  color: white;
+  margin: 30px;
+}
 
 body {
   font-family: 'Raleway', sans-serif;}
