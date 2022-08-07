@@ -20,13 +20,14 @@ var language = {
             "Tarifas",
         cont:
             "Contacto",
+        res: "Reservar",
         //imagen Inicio
         text:
-            "Alquiler de Autocaravanas J&J",
+            "Haz tu reserva ahora",
+        
+        //Formulario
         text2:
-            "Empieza tus vacaciones desde Benalmádena",
-        text3:
-            "Comienza tu viaje con nosotros",
+        "Alquiler de Autocaravana",
     },
     eng: {
         modelo:
@@ -43,13 +44,12 @@ var language = {
             "Rates",
         cont:
             "Contact",
+        res: "Booking",
         //imagen Inicio
         text:
-            "Motorhome Rental J&J",
+            "Make your reserve now",
         text2:
-            "Start your vacations from Benalmádena",
-        text3:
-            "Start your trip with us",
+        "Rent Motorhome",
     },
 };
 
@@ -66,11 +66,11 @@ if (window.location.hash) {
         con.textContent = language.es.con;
         tar.textContent = language.es.tar;
         cont.textContent = language.es.cont;
+        res.textContent = language.es.res;
 
         //imagen Inicio
         text.textContent = language.es.text;
         text2.textContent = language.es.text2;
-        text3.textContent = language.es.text3;
 
     } else if (window.location.hash == "#eng") {
         siteContent.textContent = language.eng.modelo;
@@ -80,10 +80,10 @@ if (window.location.hash) {
         con.textContent = language.eng.con;
         tar.textContent = language.eng.tar;
         cont.textContent = language.eng.cont;
+        res.textContent = language.es.res;
 
         //imagen Inicio
         text.textContent = language.eng.text;
         text2.textContent = language.eng.text2;
-        text3.textContent = language.eng.text3;
     }
-}        
+}    

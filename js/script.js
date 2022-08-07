@@ -21,12 +21,14 @@ var language = {
             "Tarifas",
         cont:
             "Contacto",
+        res: 
+            "Reserva",
         //imagen Inicio
         text:
             "Alquiler de Autocaravanas J&J",
         text2:
             "Empieza tus vacaciones desde Benalmádena",
-            text3:
+        text3:
             "Comienza tu viaje con nosotros",
         //Por que Elegirnos
         elegirnos:
@@ -108,14 +110,16 @@ var language = {
             "Rates",
         cont:
             "Contact",
+        res:
+            "Booking",
         //imagen Inicio
         text:
             "Motorhome Rental J&J",
         text2:
             "Start your vacations from Benalmádena",
-            text3:
+        text3:
             "Start your trip with us",
-            
+
         //Por que elegrinos
         elegirnos:
             "Why choose us?",
@@ -199,6 +203,7 @@ if (window.location.hash) {
         con.textContent = language.es.con;
         tar.textContent = language.es.tar;
         cont.textContent = language.es.cont;
+        res.textContent = language.es.res;
 
         //imagen Inicio
         text.textContent = language.es.text;
@@ -245,7 +250,7 @@ if (window.location.hash) {
         con.textContent = language.eng.con;
         tar.textContent = language.eng.tar;
         cont.textContent = language.eng.cont;
-
+        res.textContent = language.eng.res;
         //imagen Inicio
         text.textContent = language.eng.text;
         text2.textContent = language.eng.text2;
@@ -285,20 +290,3 @@ if (window.location.hash) {
         pre.textContent = language.eng.pre;
     }
 }
-
-var btn = $('#button');
-
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
-
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
-});
-
-

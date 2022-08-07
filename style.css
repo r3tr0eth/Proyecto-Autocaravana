@@ -1,115 +1,97 @@
-.title{
-    padding: 40px;
-    margin: 20px;
-    color: blue;
-    border-radius: 15px;
+/*
+* Menu - Imagen Principal - Footer
+*/
+
+body {
+  font-family: 'Raleway', sans-serif;
 }
 
-footer{
-    background-color: rgb(42, 42, 42);
-    border-top: 10px;
+/* Titulos Paginas */
+.title {
+  padding: 30px;
+  margin: 20px;
+  color: blue;
+  border-radius: 15px;
 }
 
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .hero-image {
-    background-image: url("Images_logo/Images_logo/logo3.png");
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  
-  .hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-  }
+/* Autocaravana*/
+.autocv {
+  margin: 20px;
+}
+/* Tablas Tarifas*/
+.table {
+  padding: 40px;
+  justify-content: center;
+  text-align: center;
+  margin-left: 20px;
+}
 
-.autocv{
-    margin: 20px;
-}
-.table{
-    padding: 40px;
-    justify-content: center;
-    text-align: center;
-    margin-left: 20px;
-}
 table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 50%;
-    
-  }
-  
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: center;
-    padding: 8px;
-    
-  }
-  th{
-    color:black;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
 
-.color{
-    justify-content: center;
 }
 
-.color1{
-    background-color: rgb(243, 243, 71);
-}
-.color2{
-    background-color: rgb(1, 206, 206);
-}
-.color3{background-color: rgb(250, 63, 63);}
-.color4{ background-color: rgb(8, 160, 8);}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
 
-.tar{
-    margin-left: 20px;
-    justify-content: center;
 }
 
-.wrapper a{
-color: #fff;
+th {
+  color: black;
 }
-.hover-fx {
-  font-size: 2rem;
-  display: inline-block;
-  cursor: pointer;
-  margin: 15px;
-  
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
+
+.color {
+  justify-content: center;
+}
+
+.color1 {
+  background-color: rgb(243, 243, 71);
+}
+
+.color2 {
+  background-color: rgb(1, 206, 206);
+}
+
+.color3 {
+  background-color: rgb(250, 63, 63);
+}
+
+.color4 {
+  background-color: rgb(8, 160, 8);
+}
+
+.tar {
+  margin-left: 20px;
+  justify-content: center;
+}
+
+/* Imagen Principal*/
 
 .back {
   background-image: url("./Images_logo/benal.jpeg");
   background-size: cover;
 
 }
-.back2{
-  background-image: url("./image/motorhome.jpeg");
+/* Imagen Secundaria Index */
+.back2 {
+  background-image: url("./image/pano.jpg");
   background-size: cover;
 }
-.quiensomos{
+
+.quiensomos {
   height: 350px;
   width: 100%;
   position: relative;
-
-  background-color: #ffffff;
-
-  opacity: 0.6;
+  background-color: #f8f0f0;
+  opacity: 0.5;
 }
 
 .centered {
@@ -120,8 +102,9 @@ color: #fff;
   text-align: center;
   font-weight: bold;
   color: #000000;
-    
+  opacity: 1;
 }
+
 .subcentered {
   position: absolute;
   top: 70%;
@@ -130,52 +113,5 @@ color: #fff;
   text-align: center;
   font-weight: bold;
   color: #000000;
-    font-size: medium;
+  font-size: medium;
 }
-#button {
-  display: inline-block;
-  background-color: #FF9800;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 4px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color .3s, 
-    opacity .5s, visibility .5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
-}
-#button::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
-  color: #fff;
-}
-#button:hover {
-  cursor: pointer;
-  background-color: #333;
-}
-#button:active {
-  background-color: #555;
-}
-#button.show {
-  opacity: 1;
-  visibility: visible;
-}
-
-.button{
-  padding: 15px;
-  background-color: blue;
-  color: white;
-  margin: 30px;
-}
-
-body {
-  font-family: 'Raleway', sans-serif;}
-

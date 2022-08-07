@@ -3,7 +3,7 @@ function changeLanguage(lang) {
   location.hash = lang;
   location.reload();
 }
-
+document.write
 // Define the language reload anchors
 var language = {
   es: {
@@ -51,17 +51,16 @@ var language = {
     alt1:
       "Alta",
     redper:
-      "1 ENERO – 28 FEBRERO",
+      "1 ENERO – 31 ENERO",
     bajper:
-      "1 MARZO – 30 ABRIL" +
-      "\n\r 1 NOVIEMBRE – 31 DICIEMBRE",
+      "1 FEBRERO – 30 ABRIL",
     medper:
       "1 MAYO – 30 JUNIO" +
-      "\n\r1 SEPTIEMBRE – 31 OCTUBRE" +
-      "\n\r* Puentes y Festivos Nacionales",
+      "1 SEPTIEMBRE – 31 DICIEMBRE" +
+      "* Puentes y Festivos Nacionales",
     altper:
       "1 JULIO – 31 AGOSTO " +
-      "\n\r * Semana Santa",
+      "\n\r * Semana Santa y Semana Blanca",
     min:
       "Mínimo",
     pre:
@@ -117,17 +116,16 @@ var language = {
     alt:
       "High",
     redper:
-      "1 JANUARY - 28 FEBRUARY",
+      "1 JANUARY - 31 JANUARY",
     bajper:
-      "1 MARCH - 30 APRIL" +
-      "\n\r 1 NOVEMBER - 31 DECEMBER",
+      "1 FEBRUARY - 30 APRIL",
     medper:
       " 1 MAY - 30 JUNE " +
-      "\n\r 1 SEPTEMBER - 31 OCTOBER " +
-      "\n\r * Long weekends and national holidays",
+      "1 SEPTEMBER - 31 DECEMBER " +
+      " * Long weekends and national holidays",
     altper:
       "1 JULY - 31 AUGUST" +
-      "\n\r * Easter",
+      " * Easter",
     min:
       "Minimum",
     pre:
