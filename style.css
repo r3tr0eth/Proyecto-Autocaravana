@@ -4,6 +4,12 @@
 
 body {
   font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+
+}
+
+.popup .mapboxgl-popup-content {
+  padding:0;
 }
 
 /* Titulos Paginas */
@@ -114,4 +120,13 @@ tr:nth-child(even) {
   font-weight: bold;
   color: #000000;
   font-size: medium;
+}
+
+::-webkit-scrollbar {
+  width: 0.8vw;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #578fe4;
 }

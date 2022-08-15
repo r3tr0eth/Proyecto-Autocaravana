@@ -32,10 +32,6 @@ body {
     font-size: 30px;
 }
 
-.heading-phone {
-    font-size: 20px;
-}
-
 .container-form {
     padding: 20px 0;
     margin: 0 auto;
@@ -45,18 +41,9 @@ body {
 form {
     display: grid;
     grid-row-gap: 20px;
-}
-
-form p {
-    font-weight: 600;
-}
-
-.form-field {
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 input, select {
     padding: 10px 15px;
 }
-

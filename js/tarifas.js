@@ -18,6 +18,7 @@ var language = {
       "Tarifas",
     cont:
       "Contacto",
+    res: "Reservar",
     //imagen Inicio
     text:
       "Nuestras Tarifas",
@@ -79,6 +80,8 @@ var language = {
       "Rates",
     cont:
       "Contact",
+
+    res: "Booking",
     //Imagen Inicio
     text:
       "Our Rates",
@@ -144,7 +147,7 @@ if (window.location.hash) {
     con.textContent = language.es.con;
     tar.textContent = language.es.tar;
     cont.textContent = language.es.cont;
-
+    res.textContent = language.es.res;
     //imagen Inicio
     text.textContent = language.es.text;
     text2.textContent = language.es.text2;
@@ -178,7 +181,8 @@ if (window.location.hash) {
     con.textContent = language.eng.con;
     tar.textContent = language.eng.tar;
     cont.textContent = language.eng.cont;
-    
+    res.textContent = language.eng.res;
+
     //imagen Inicio
     text.textContent = language.eng.text;
     text2.textContent = language.eng.text2;

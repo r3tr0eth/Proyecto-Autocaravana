@@ -6,9 +6,7 @@ function changeLanguage(lang) {
 // Define the language reload anchors
 var language = {
     es: {
-        modelo:
-            "Nuestros Modelos",
-
+        
         //Menu
         auto:
             "Autocaravanas",
@@ -28,6 +26,17 @@ var language = {
         //Formulario
         text2:
         "Alquiler de Autocaravana",
+        nom:
+        "Nombre",
+        ape:"Apellido",
+        tel:"Teléfono",
+        email:"Email",
+        choose:"Elige Autocaravana",
+        fecha1:"Fecha de inicio",
+        fecha2:"Fecha de regreso",
+        pricefi:"Precio Fianza:",
+        pricet:"Precio Total:",
+        coment:"Comentario / Preguntas",
     },
     eng: {
         modelo:
@@ -50,6 +59,17 @@ var language = {
             "Make your reserve now",
         text2:
         "Rent Motorhome",
+        nom:
+        "Name",
+        ape:"Last Name",
+        tel:"Telephone",
+        email:"Email",
+        choose:"Choose Motorhome",
+        fecha1:"Start Date",
+        fecha2:"Return date",
+        pricefi:"Deposit Price:",
+        pricet:"Total Price:",
+        coment:"Comment / Questions",
     },
 };
 
@@ -59,7 +79,6 @@ if (window.location.hash) {
     // Set the content of the webpage
     // depending on the hash value
     if (window.location.hash == "#es") {
-        siteContent.textContent = language.es.modelo;
         //Menu
         auto.textContent = language.es.auto;
         nos.textContent = language.es.nos;
@@ -71,9 +90,18 @@ if (window.location.hash) {
         //imagen Inicio
         text.textContent = language.es.text;
         text2.textContent = language.es.text2;
+        nom.textContent = language.es.nom;
+        ape.textContent = language.es.ape;
+        tel.textContent = language.es.tel;
+        email.textContent = language.es.email;
+        choose.textContent = language.es.choose;
+        fecha1.textContent = language.es.fecha1;
+        fecha2.textContent = language.es.fecha2;
+        pricefi.textContent = language.es.pricefi;
+        pricet.textContent = language.es.pricet;
+        coment.textContent = language.es.coment;
 
     } else if (window.location.hash == "#eng") {
-        siteContent.textContent = language.eng.modelo;
         //Menu
         auto.textContent = language.eng.auto;
         nos.textContent = language.eng.nos;
@@ -85,5 +113,16 @@ if (window.location.hash) {
         //imagen Inicio
         text.textContent = language.eng.text;
         text2.textContent = language.eng.text2;
+        nom.textContent = language.eng.nom;
+        ape.textContent = language.eng.ape;
+        tel.textContent = language.eng.tel;
+        email.textContent = language.eng.email;
+        choose.textContent = language.eng.choose;
+        fecha1.textContent = language.eng.fecha1;
+        fecha2.textContent = language.eng.fecha2;
+        pricefi.textContent = language.es.pricefi;
+        pricet.textContent = language.eng.pricet;
+        coment.textContent = language.eng.coment;
     }
 }    
+

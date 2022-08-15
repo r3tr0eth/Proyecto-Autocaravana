@@ -15,6 +15,15 @@
     <link rel="icon" type="image/png" href="./Images_logo/favicon.ico" />
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
+    
+    
+<script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+<script>
+    Weglot.initialize({
+        api_key: 'wg_1f547e5ec1e8884f247eb6d3983dbd331'
+    });
+</script>
+  
 </head>
 
 <body>
@@ -46,14 +55,7 @@
                 <li class="nav-item ">
                     <a class="nav-link mt-4" href="contacto.html" id="cont">Contacto</a>
                 </li>
-                <li class="nav-item ">
-                    <a class="nav-link mt-4">
-                        <img onclick="changeLanguage('eng')" src="Images_logo/uk_flag.jpg" width="20" height="20"> </a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link mt-4">
-                        <img onclick="changeLanguage('es')" src="Images_logo/esp_flag.jpg" width="20" height="20"> </a>
-                </li>
+              
             </ul>
         </div>
     </nav>
@@ -65,64 +67,61 @@
             </h1>
         </div>
     </div>
-    <div class="container justify-content-center">
+    <div class="container">
         <form method="post" action="https://formspree.io/f/xbjwnwan" onSubmit="return validateForm();">
             <div style="max-width: 350px;">
             </div>
-            <div style="padding-bottom: 18px;font-size : 24px;" id="text2">Alquiler de Autocaravana</div>
-            <div style="display: flex; padding-bottom: 18px;max-width : 450px;">
-                <div style=" margin-left: 0; margin-right: 1%; width: 49%;">Nombre<span style="color: red;">
+            <div style="font-size : 24px;" id="text2">Alquiler de Autocaravana</div>
+            <div class="nampe" style="display: flex; ">
+                <div class="nam" id="nom" style="margin-right: 1%; width: 49%;">Nombre<span style="color: red;">
                         *</span><br />
-                    <input type="text" id="data_2" name="data_2" style="max-width: 100%;" class="form-control"
+                    <input type="text" id="data_2" name="data_2" class="form-control"
                         placeholder="Nombre" />
                 </div>
-                <div style=" margin-left: 1%; margin-right: 0; width: 49%;">Apellido<span style="color: red;">
+                <div class="ape" id="ape" style=" margin-left: 1%; width: 49%;">Apellido<span style="color: red;">
                         *</span><br />
-                    <input type="text" id="data_3" name="data_3" style="max-width: 100%;" class="form-control"
+                    <input type="text" id="data_3" name="data_3" class="form-control"
                         placeholder="Apellido" />
                 </div>
             </div>
-            <div style="padding-bottom: 18px;">Teléfono<span style="color: red;"> *</span><br />
-                <input type="text" id="data_4" name="data_4" style="max-width : 450px;" class="form-control"
+            <div id="tel">Teléfono<span style="color: red;"> *</span><br />
+                <input type="text" id="data_4" name="data_4"  class="form-control"
                     placeholder="Teléfono" />
             </div>
-            <div style="padding-bottom: 18px;">Email<span style="color: red;"> *</span><br />
-                <input type="text" id="data_5" name="data_5" style="max-width : 450px;" class="form-control"
+            <div id="email">Email<span style="color: red;"> *</span><br />
+                <input type="text" id="data_5" name="data_5"  class="form-control"
                     placeholder="Email" />
             </div>
 
-            <div style="padding-bottom: 18px;">Elige autocaravana<span style="color: red;"> *</span><br />
-                <select id="data_11" name="autocaravana" style="max-width : 450px;" class="form-control">
+            <div id="choose">Elige autocaravana<span style="color: red;"> *</span><br />
+                <select id="data_11" name="autocaravana"  class="form-control">
                     <option>Elige autocaravana</option>
                     <option>Fiat Ducato Euro6 2.3 140 CV</option>
                     <option>Elnagh BARON 560</option>
                 </select>
             </div>
-            <div style="padding-bottom: 18px;">Fecha de inicio<span style="color: red;"> *</span><br />
-                <input type="text" id="data_6" name="data_6" style="max-width : 250px;" class="form-control" />
+
+            <div id="fecha1">Fecha de inicio<span style="color: red;"> *</span><br />
+                <input type="date" data-date-format="DD MMMM YYYY" name="" id="data_6" style="max-width : 250px;" class="form-control" />
             </div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/pikaday.min.js"
-                type="text/javascript"></script>
-            <link href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/css/pikaday.min.css" rel="stylesheet"
-                type="text/css" />
-            <script type="text/javascript">new Pikaday({ field: document.getElementById('data_6') });</script>
-            <div style="padding-bottom: 18px;">Fecha de regreso<span style="color: red;"> *</span><br />
-                <input type="text" id="data_7" name="data_7" style="max-width : 250px;" class="form-control" />
+            <div id="fecha2">Fecha de regreso<span style="color: red;"> *</span><br />
+                <input type="date" name="" id="data_7" style="max-width : 250px;" class="form-control"
+                    onchange="calculate()" />
+
             </div>
+            <div id="pricefi">Precio Fianza: </div>
 
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/pikaday.min.js"
-                type="text/javascript"></script>
-            <link href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/css/pikaday.min.css" rel="stylesheet"
-                type="text/css" />
-            <script type="text/javascript">new Pikaday({ field: document.getElementById('data_7') });</script>
+            <div id="fianza" >300€</div>
 
-
-            <div style="padding-bottom: 18px;">Comentarios / Preguntas<br />
+            <div style="display:none;" id="pricet" >Precio Total: </div>
+            <div style="display:none;" id="price">80€
+            </div>
+            <div id="coment">Comentarios / Preguntas<br />
                 <textarea id="data_10" false name="data_10" style="max-width : 450px;" rows="6" class="form-control"
                     placeholder="Comentarios"></textarea>
             </div>
             <div class="g-recaptcha" data-sitekey="6Lc3WB0hAAAAAKADeAr-dW2-rOtjkT4NnbVIUfod"></div>
-            <div style="padding-bottom: 18px;"><input value="Submit" type="submit" /></div>
+            <div style="padding-bottom: 18px;"><input value="Submit" type="submit"/></div>
 
         </form>
     </div>
@@ -206,46 +205,10 @@
     <!-- Footer -->
 </body>
 
-<script src="./js/reservas.js" crossorigin="anonymous">
-
-</script>
+<script src="./js/reservas.js" crossorigin="anonymous"></script>
+<script src="./js/reserva.js" crossorigin="anonymous"></script>
 <script type="text/javascript">
-    function validateForm() {
-        if (isEmpty(document.getElementById('data_2').value.trim())) {
-            alert('First name is required!');
-            return false;
-        }
-        if (isEmpty(document.getElementById('data_3').value.trim())) {
-            alert('Last name is required!');
-            return false;
-        }
-        if (isEmpty(document.getElementById('data_4').value.trim())) {
-            alert('Phone is required!');
-            return false;
-        }
-        if (isEmpty(document.getElementById('data_5').value.trim())) {
-            alert('Email is required!');
-            return false;
-        }
-        if (!validateEmail(document.getElementById('data_5').value.trim())) {
-            alert('Email must be a valid email address!');
-            return false;
-        }
-        if (isEmpty(document.getElementById('data_6').value.trim())) {
-            alert('Requerido el dia de llegada!');
-            return false;
-        }
-        if (isEmpty(document.getElementById('data_7').value.trim())) {
-            alert('Requerido el dia de salida!');
-            return false;
-        }
-        return true;
-    }
-    function isEmpty(str) { return (str.length === 0 || !str.trim()); }
-    function validateEmail(email) {
-        var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
-        return isEmpty(email) || re.test(email);
-    }
+   
 </script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

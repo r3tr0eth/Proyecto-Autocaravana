@@ -7,9 +7,10 @@ function changeLanguage(lang) {
 // Define the language reload anchors
 var language = {
     es: {
+        
         modelo:
             "Nuestros Modelos",
-
+        
         //Menu
         auto:
             "Autocaravanas",
@@ -93,8 +94,7 @@ var language = {
             "Mínimo",
         pre:
             "Precio",
-
-    },
+   },
     eng: {
         modelo:
             "Our Models",
